@@ -7,11 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Implements\**" />
     <Compile Remove="Services\**" />
-    <EmbeddedResource Remove="Implements\**" />
     <EmbeddedResource Remove="Services\**" />
-    <None Remove="Implements\**" />
     <None Remove="Services\**" />
   </ItemGroup>
 
@@ -24,6 +21,11 @@
   <ItemGroup>
     <ProjectReference Include="..\Data\Data.csproj" />
     <ProjectReference Include="..\Entity\Entity.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Implements\" />
+    <Folder Include="Interfaces\" />
   </ItemGroup>
 
 </Project>
